@@ -3,7 +3,7 @@ package me.snegi.salestax;
 import me.snegi.cache.CacheConfig;
 import me.snegi.cache.CacheImpl;
 import me.snegi.cache.CacheReapingStrategy;
-import me.snegi.dao.TaxLookupDaoImpl;
+import me.snegi.dao.SalesTaxRateLookupDaoImpl;
 import me.snegi.model.Address;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,7 +34,7 @@ public class SalesTaxLookupServiceImplTest {
 			new CacheImpl<Address, Double>(cacheConfig));
 
 		salesTaxLookupService.withDao(
-			new TaxLookupDaoImpl()
+			new SalesTaxRateLookupDaoImpl()
 		);
 	}
 

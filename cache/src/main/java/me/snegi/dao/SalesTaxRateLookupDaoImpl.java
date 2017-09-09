@@ -6,8 +6,8 @@ import java.util.Random;
 
 /**
  */
-public class TaxLookupDaoImpl
-	implements TaxLookupDao {
+public class SalesTaxRateLookupDaoImpl
+	implements SalesTaxRateLookupDao {
 
 	private final Random random = new Random();
 

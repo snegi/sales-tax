@@ -1,7 +1,7 @@
 package me.snegi.salestax;
 
 import me.snegi.cache.Cache;
-import me.snegi.dao.TaxLookupDao;
+import me.snegi.dao.SalesTaxRateLookupDao;
 import me.snegi.model.Address;
 
 /**
@@ -10,7 +10,7 @@ public class SalesTaxLookupServiceImpl
 	implements SalesTaxLookupService {
 
 	private Cache<Address, Double> cache;
-	private TaxLookupDao dao;
+	private SalesTaxRateLookupDao dao;
 
 
 	public Double getSalesTaxRate(Address address) {
@@ -24,7 +24,7 @@ public class SalesTaxLookupServiceImpl
 		this.cache = cache;
 	}
 
-	public void withDao(TaxLookupDao dao) {
+	public void withDao(SalesTaxRateLookupDao dao) {
 		this.dao = dao;
 	}
 }

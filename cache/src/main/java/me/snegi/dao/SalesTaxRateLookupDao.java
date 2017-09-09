@@ -4,7 +4,7 @@ import me.snegi.model.Address;
 
 /**
  */
-public interface TaxLookupDao {
+public interface SalesTaxRateLookupDao {
 
 	Double getSalesTax(Address address);
 }
