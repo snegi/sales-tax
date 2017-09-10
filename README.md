@@ -1,5 +1,5 @@
 
-Implements a generic in-memory, thread safe cache that supports LRU expiration policy. Can be extended to LFU ( Least Frequently Used )
+Implements a generic, in-memory, thread-safe cache that supports LRU expiration policy. Can be extended to LFU ( Least Frequently Used )
 
 Implements a SalesTaxLookupService that exposes a Facade for doing the tax rate lookups. SalesTaxLookupService hides the implementation specific details and whether rate is picked from cache of another persistent repository ( aka database )
 
